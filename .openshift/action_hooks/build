@@ -1,0 +1,8 @@
+#!/bin/bash
+
+cd ${OPENSHIFT_REPO_DIR}
+
+export M2_HOME=/etc/alternatives/maven-3.0
+export PATH=$JAVA_HOME/bin:$M2_HOME/bin:$PATH
+
+mvn --global-settings ${OPENSHIFT_REPO_DIR}maven.xml install -Popenshift -DskipTests
