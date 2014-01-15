@@ -3,7 +3,7 @@
 Simple way to deploy OBR (OSGi Bundle Repository) on OpenShift
 
 ```
-rhc app create [app name] ruby-1.9 --from-code=https://bitbucket.org/mjelen/osgi-repository.git
+rhc app create [app name] ruby-1.9 --from-code=https://github.com/openshift-quickstart/osgi-repository.git
 ```
 
 ## How to
